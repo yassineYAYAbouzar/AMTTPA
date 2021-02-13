@@ -8,6 +8,12 @@ gulp.task('html' , function(){
     .pipe(gulp.dest('dist'))
     .pipe(gulp.dest('prodaction'))
 });
+//assets
+gulp.task('assets' , function(){
+    return gulp.src('stage/assets/*')
+    .pipe(gulp.dest('dist/assets/'))
+    .pipe(gulp.dest('prodaction/assets/'))
+});
 //lbscss
 gulp.task('lbscss' , function(){
     return gulp.src(['stage/css/font-awesome.min.css','stage/css/normalize.css'])
