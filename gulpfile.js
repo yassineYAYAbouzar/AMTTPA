@@ -2,7 +2,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer');
 //html
 gulp.task('html' , function(){
-    return gulp.src('stage/index.html')
+    return gulp.src('stage/**.html')
     .pipe(gulp.dest('../AMTTPAdist/dist'))
     .pipe(gulp.dest('prodaction'))
 });
@@ -46,7 +46,7 @@ gulp.task('css' , function (){
 //WATCH 
 
 gulp.task('watch', function(){
-    gulp.watch('stage/index.html', gulp.series(['html']));
+    gulp.watch('stage/**.html', gulp.series(['html']));
     gulp.watch('stage/php/main.php', gulp.series(['php']));
     gulp.watch('stage/assets/*', gulp.series(['assets']));
     gulp.watch(['stage/css/font-awesome.min.css','stage/css/normalize.css'], gulp.series(['lbs']));

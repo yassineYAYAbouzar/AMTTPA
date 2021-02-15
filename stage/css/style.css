@@ -8,6 +8,6 @@
   margin: auto; }
 
 button {
-  background-color: aliceblue; }
+  display: flex; }
 
 /*# sourceMappingURL=style.css.map */
