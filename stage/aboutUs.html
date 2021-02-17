@@ -10,8 +10,72 @@
     <title>AMMTPA1</title>
 </head>
 <body>
-<div class="container">
-</div>
+    <!--start global-->
+    <header>
+    <!--start header-top-social-media-->
+    <section class="header-top">
+        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox"> <i class="fa fa-envelope-o"></i></a>
+        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox"> <i class="fa fa-map-marker"></i></a>
+        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox"> <i class="fa fa-phone">+212602610742</i></a>
+        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox"> <i class="fa fa-linkedin"></i></a>
+        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox"> <i class="fa fa-twitter"></i></a>
+        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox"> <i class="fa fa-facebook"></i></a>
+    </section>
+    <!-- end header-top-social-media-->
+    <!-- start header bas-->
+    <section class="header-bas">
+        <section class="logo">logo</section>
+        <ul id="navbar">
+            <a href="index.html">Home</a><span>|</span>
+            <a href="aboutUs.html" class="active">About</a><span>|</span>
+            <a href="livingLab.html">living Lab</a><span>|</span>
+            <a href="blog.html"  >blog</a><span>|</span>
+            <a href="gallery.html">gallery</a><span>|</span>
+            <a href="contactUs.html">contactUs</a>
+        </ul>
+        <form class="header-bas__searchIcon">
+            <input type="search" class="search displayNOn" >
+            <i class="fa fa-search" onclick="fade();"></i>
+        </form>
+        <i class="fa fa-bars header-bas__hamborg" onclick="toggleNav();"></i>
+    </section>
+</header>
+    <!-- end header bas-->
+    <!-- start header-slide-->
+    
+<section class="slide">
+    <section class="slide__overlay"></section>
+    <section class="slide__description">
+        <h2>Lorem ipsum!</h2>
+        <h1>Blog</h1>
+    </section>
+    <section class="slider ">
+        <img src="assets/last.jpg"  />
+    </section>
+
+    <section class="slider ">
+        <img src="assets/terth.webp" />
+    </section>
+
+    <section class="slider">
+        <img src="assets/last.jpg" />
+    </section>
+
+    <a class="slide__preview" onclick="nextSlidePR(-1)">&#10094;</a>
+    <a class="slide__Next" onclick="nextSlidePR(1)">&#10095;</a>
+    
+    <br />
+
+    <section class="thepullet">
+    <span class="BOLLET" onclick="buleSlide(1)"></span>
+    <span class="BOLLET" onclick="buleSlide(2)"></span>
+    <span class="BOLLET" onclick="buleSlide(3)"></span>
+    </section>
+</section>
+    <!-- end header-slide-->
+    <!--start global-->
+</body>
+</section>
 <script src="js/master.js"></script>
 </body>
 </html>
